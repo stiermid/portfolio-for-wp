@@ -32,6 +32,10 @@ button{
 .accent-text{
     color: var(--accent);
 }
+.passive-text{
+    color: var(--passive);
+    filter: brightness(150%);
+}
 
 .accent-button{
     background-color: var(--accent);
@@ -53,6 +57,7 @@ nav {
     justify-content: space-between;
     padding: 3rem 6rem;
     border-bottom: 1px solid var(--passive);
+    background-color: var(--bg);
 }
 
 .nav-links {
@@ -94,3 +99,29 @@ nav {
     display: flex;
     gap: 24px;
 }
+
+/** 
+ * ////////////////////////////////////////////////////////////////////
+ * FOOTER
+ */
+footer{
+    display: flex;
+    width: 100%;
+    border-top: 1px solid var(--passive);
+}
+
+footer > div{
+    display: flex;
+    gap: 38px;
+    flex-direction: column;
+    max-width: 1440px;
+    margin: 40px auto;
+    align-items: center;
+    justify-content: center;
+}
+
+footer > div > div{
+    display: flex;
+    gap: 48px;
+}
+

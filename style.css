@@ -125,3 +125,37 @@ footer > div > div{
     gap: 48px;
 }
 
+/** 
+ * ////////////////////////////////////////////////////////////////////
+ * FOOTER
+ */
+form
+{
+    display: flex;
+    gap: 24px;
+    flex-direction: column;
+}
+
+form div{
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+}
+
+input, textarea{
+    border: none;
+    border-radius: 16px;
+    background-color: var(--passive);
+    padding: 16px 24px;
+    font-weight: bold;
+    font-size: 18px;
+}
+label{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-weight: bold;
+    font-size: 18px;
+
+}
+

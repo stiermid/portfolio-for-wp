@@ -19,7 +19,7 @@ body {
     background: var(--bg);
 }
 
-button{
+button {
     padding: 10px 32px;
     border-radius: 100px;
     font-size: 18px;
@@ -29,15 +29,16 @@ button{
     cursor: pointer;
 }
 
-.accent-text{
+.accent-text {
     color: var(--accent);
 }
-.passive-text{
+
+.passive-text {
     color: var(--passive);
     filter: brightness(150%);
 }
 
-.accent-button{
+.accent-button {
     background-color: var(--accent);
     color: var(--fg);
 }
@@ -76,41 +77,56 @@ nav {
  * CONTAINER
  */
 
-.container{
+.container {
     max-width: 1440px;
     margin: 0 auto;
     display: flex;
-    flex-direction: wrap;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
-    height: 80vh;
+    min-height: 80vh;
 }
 
-.container h1{
+.container h1 {
     font-size: 96px;
 }
 
-.hero{
+.hero {
     display: flex;
     flex-direction: column;
 }
 
-.hero-links{
+.hero-links {
     display: flex;
     gap: 24px;
+}
+
+.blog {
+    width: 100%;
+}
+
+.blog ul {
+    list-style-type: none;
+    padding: 16px;
+}
+
+.blog ul li {
+    background-color: var(--passive);
+    border-radius: 16px;
+    padding: 24px 16px;
+    margin-bottom: 16px;
 }
 
 /** 
  * ////////////////////////////////////////////////////////////////////
  * FOOTER
  */
-footer{
+footer {
     display: flex;
     width: 100%;
     border-top: 1px solid var(--passive);
 }
 
-footer > div{
+footer>div {
     display: flex;
     gap: 38px;
     flex-direction: column;
@@ -120,7 +136,7 @@ footer > div{
     justify-content: center;
 }
 
-footer > div > div{
+footer>div>div {
     display: flex;
     gap: 48px;
 }
@@ -129,20 +145,20 @@ footer > div > div{
  * ////////////////////////////////////////////////////////////////////
  * FOOTER
  */
-form
-{
+form {
     display: flex;
     gap: 24px;
     flex-direction: column;
 }
 
-form div{
+form div {
     display: flex;
     flex-direction: row;
     gap: 24px;
 }
 
-input, textarea{
+input,
+textarea {
     border: none;
     border-radius: 16px;
     background-color: var(--passive);
@@ -150,7 +166,8 @@ input, textarea{
     font-weight: bold;
     font-size: 18px;
 }
-label{
+
+label {
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -158,4 +175,3 @@ label{
     font-size: 18px;
 
 }
-
